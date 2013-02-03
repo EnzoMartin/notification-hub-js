@@ -1,0 +1,42 @@
+{
+	"name": "message-hub",
+	"description": "Message Hub",
+	"version": "0.0.1",
+	"private": true,
+	"author": "Enzo Martin <enzo.r.martin@gmail.com>",
+	"contributors": [
+		{
+			"name": "Enzo Martin",
+			"email": "enzo.r.martin@gmail.com"
+		}
+	],
+	"scripts": {
+		"start": "./node_modules/.bin/nodemon server.js"
+	},
+	"dependencies": {
+		"express": "latest",
+		"backbone": "latest",
+		"underscore": "latest",
+		"moment": "latest",
+		"mongoose": "latest",
+		"less": "latest",
+		"jade": "latest",
+		"socket.io": "latest",
+		"connect-mongo": "latest",
+		"connect-flash": "latest",
+		"passport": "latest",
+		"passport-local": "latest",
+		"passport-facebook": "latest",
+		"passport-twitter": "latest",
+		"passport-github": "latest",
+		"passport-google-oauth": "latest",
+		"imager": "latest",
+		"gzippo": "latest",
+		"async": "latest",
+		"nodemon": "latest"
+	},
+	"devDependencies": {
+		"grunt-contrib-less": "latest",
+		"grunt-contrib-jade": "latest"
+	}
+}

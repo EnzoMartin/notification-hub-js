@@ -1,0 +1,39 @@
+body {
+  padding: 40px 0 60px;
+}
+#header #header-alert {
+  padding: 20px 0 0;
+  width: 25%;
+}
+#footer {
+  background-color: #F5F5F5;
+  border-top: 1px solid #E5E5E5;
+  padding: 30px 0;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+}
+#loading {
+  margin-top: 40px;
+}
+#loading.internal .alert {
+  margin: 0;
+}
+.btn {
+  margin: 0 2px;
+}
+table.table td {
+  vertical-align: middle;
+}
+table .status {
+  text-align: center;
+}
+table .status .icon-ok {
+  color: #008000;
+}
+table .status .icon-remove {
+  color: #ff0000;
+}
+table .actions {
+  text-align: center;
+}
