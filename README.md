@@ -10,7 +10,8 @@ Planned:
 * Add different sized widgets
 * Add dynamically hiding widgets
 
-
+## Demo:
+Assuming Windows Azure hasn't crapped out again, you can view a demo here: http://notification-hub.azurewebsites.net/#messages
 
 ## License
 
