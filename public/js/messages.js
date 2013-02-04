@@ -80,7 +80,7 @@ window.requestAnimFrame = (function(){
 				delete this[item + '_instances'][name];
 			},this));
 		} else {
-			throw new Error('Definition not found');
+			throw new Error('Definition "' + name + '" of type "' + item + '" not found');
 		}
 		return instance;
 	};

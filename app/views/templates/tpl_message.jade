@@ -1,0 +1,20 @@
+.row-fluid
+	.row-fluid
+		.span2
+			img(src="{{image}}",width="100%",height="100%")
+		.span10
+			.row-fluid.message-metadata
+				h7.message-from {{from}}
+				button.close.pull-right(type="button",data-dismiss="message")  &times;
+				span.pull-right.muted.message-timestamp {{timestamp}}
+			.row-fluid.message-content
+				span {{message}}
+			.row-fluid.message-expand
+				i.icon-chevron-down
+			.row-fluid.message-condense
+				i.icon-chevron-up
+	.row-fluid.message-buttons
+		.btn-group.pull-right
+			{{#actions}}
+			a.btn(data-action="{{action}}") {{text}}
+			{{/actions}}

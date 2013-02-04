@@ -37,3 +37,43 @@ table .status .icon-remove {
 table .actions {
   text-align: center;
 }
+#messages-list .new-message {
+  display: none;
+  border-top: 1px solid #000;
+  padding-top: 10px;
+  margin-bottom: 10px;
+}
+#messages-list .new-message .message-buttons {
+  border-top: 1px solid #666;
+  padding-top: 5px;
+}
+#messages-list .new-message img {
+  max-height: 120px;
+}
+#messages-list .new-message .message-expand {
+  display: none;
+  text-align: center;
+  cursor: pointer;
+}
+#messages-list .new-message .message-condense {
+  text-align: center;
+  cursor: pointer;
+}
+#messages-list .message-condensed .message-content {
+  display: none;
+}
+#messages-list .message-condensed .message-buttons {
+  display: none;
+}
+#messages-list .message-condensed img {
+  max-height: 50px;
+}
+#messages-list .message-condensed .message-expand {
+  display: block;
+}
+#messages-list .message-condensed .message-condense {
+  display: none;
+}
+#messages-list {
+  list-style: none;
+}

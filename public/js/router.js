@@ -21,7 +21,7 @@
 			this.render_loading();
 			var messages_collection = MJS.get({collection: {name: 'messages_collection'}});
 			var messages = MJS.get({view: {name: 'messages_list'},model: {name: 'messages_list'},collection: messages_collection});
-			messages_collection.fetch({update: true});
+			//messages_collection.fetch({update: true});
 			MJS.render(messages);
 		},
 

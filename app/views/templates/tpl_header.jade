@@ -3,10 +3,22 @@
 		.container
 			a.brand(href="/#home")
 				i.icon-home  Notification Hub
-			.nav-collapse.collapse
+			.nav-collapse.collapse.navbar-responsive-collapse
 				ul.nav
-					li.active
-						a(href='/#home') Home
+					li
+						a(href="#messages") Messages
+					li.dropdown
+						a.dropdown-toggle(data-toggle="dropdown",href="#")
+							| Dropdown
+							b.caret
+						ul.dropdown-menu
+							li
+								a(href="#test") Action
+							li
+								a(href="#test") Action
+							li.divider
+							li
+								a(href="#test") Action
 				ul.nav.pull-right
 					li
 						a(href='#login')

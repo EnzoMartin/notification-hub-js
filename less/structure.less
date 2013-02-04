@@ -45,3 +45,54 @@ table .status {
 table .actions {
 	text-align:center;
 }
+
+#messages-list {
+	.new-message {
+		display:none;
+		border-top:1px solid #000;
+		padding-top:10px;
+		margin-bottom:10px;
+
+		.message-buttons {
+			border-top:1px solid #666;
+			padding-top:5px;
+		}
+
+		img {
+			max-height:120px;
+		}
+		.message-expand {
+			display:none;
+			text-align:center;
+			cursor:pointer;
+		}
+
+		.message-condense {
+			text-align:center;
+			cursor:pointer;
+		}
+	}
+
+	.message-condensed {
+		.message-content {
+			display:none;
+		}
+
+		.message-buttons {
+			display:none;
+		}
+		img {
+			max-height:50px;
+		}
+		.message-expand {
+			display:block;
+		}
+		.message-condense {
+			display:none;
+		}
+	}
+}
+
+#messages-list {
+	list-style:none;
+}

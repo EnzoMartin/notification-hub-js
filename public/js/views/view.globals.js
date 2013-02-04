@@ -2,8 +2,8 @@
 	_.extend(window.SA.prototype.view_definitions,{
 		header: Backbone.View.extend({
 			events: {
-				'click .navbar a'	: 'set_active',
-				'alert'				: 'trigger_alert'
+				'click .navbar a:not(.dropdown-toggle)'	: 'set_active',
+				'alert'									: 'trigger_alert'
 			},
 
 			el: '#header',
