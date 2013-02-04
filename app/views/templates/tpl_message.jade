@@ -5,8 +5,15 @@
 		.span10
 			.row-fluid.message-metadata
 				h7.message-from {{from}}
-				button.close.pull-right(type="button",data-dismiss="message")  &times;
-				span.pull-right.muted.message-timestamp {{timestamp}}
+				.pull-right.muted.message-timestamp
+					span {{timestamp}}
+					button.close(type="button",data-dismiss="message")  &times;
+			.row-fluid.message-title
+				.span10
+					span {{title}}
+				.span2.pull-right.message-icon
+					span {{type.name}}
+					i(class="icon-{{type.icon}}")
 			.row-fluid.message-content
 				span {{message}}
 			.row-fluid.message-expand

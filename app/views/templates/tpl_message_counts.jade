@@ -1,0 +1,11 @@
+{{#.}}
+li.active
+	a.message-filter(href="#",data-filter="{{icon}}")
+		i(class="icon-{{icon}}")
+		span {{name}} ({{count}})
+{{/.}}
+
+li.pull-right
+	a#clear-all-messages(href="#",data-action="clear")
+		i.icon-ban-circle
+		span  Dismiss All

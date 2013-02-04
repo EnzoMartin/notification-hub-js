@@ -37,6 +37,13 @@ table .status .icon-remove {
 table .actions {
   text-align: center;
 }
+#messages-list.hide-bullhorn .bullhorn,
+#messages-list.hide-calendar .calendar,
+#messages-list.hide-camera .camera,
+#messages-list.hide-fighter-jet .fighter-jet,
+#messages-list.hide-envelope .envelope {
+  display: none !important;
+}
 #messages-list .new-message {
   display: none;
   border-top: 1px solid #000;
@@ -58,6 +65,9 @@ table .actions {
 #messages-list .new-message .message-condense {
   text-align: center;
   cursor: pointer;
+}
+#messages-list .new-message .message-icon {
+  text-align: right;
 }
 #messages-list .message-condensed .message-content {
   display: none;

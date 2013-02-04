@@ -47,17 +47,23 @@ table .actions {
 }
 
 #messages-list {
+	&.hide-bullhorn .bullhorn,
+	&.hide-calendar  .calendar,
+	&.hide-camera .camera,
+	&.hide-fighter-jet .fighter-jet,
+	&.hide-envelope .envelope {
+		display:none !important;
+	}
+
 	.new-message {
 		display:none;
 		border-top:1px solid #000;
 		padding-top:10px;
 		margin-bottom:10px;
-
 		.message-buttons {
 			border-top:1px solid #666;
 			padding-top:5px;
 		}
-
 		img {
 			max-height:120px;
 		}
@@ -66,10 +72,12 @@ table .actions {
 			text-align:center;
 			cursor:pointer;
 		}
-
 		.message-condense {
 			text-align:center;
 			cursor:pointer;
+		}
+		.message-icon {
+			text-align:right;
 		}
 	}
 
@@ -77,7 +85,6 @@ table .actions {
 		.message-content {
 			display:none;
 		}
-
 		.message-buttons {
 			display:none;
 		}
