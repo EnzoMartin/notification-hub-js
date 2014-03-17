@@ -19,5 +19,13 @@ module.exports = {
     test:{
     },
     production:{
+        root:require('path').normalize(__dirname + '/..'),
+        app:{
+            name:common.appName + 'Dev',
+            google:'',
+            CDN: '/'
+        },
+        common:common,
+		db:process.env.MONGO
     }
 };
